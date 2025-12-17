@@ -2,3 +2,4 @@ fiftyone                    1.11.0
 autodistill                 0.1.29
 autodistill-grounding-dino  0.1.4
 autodistill-yolov8          0.1.4
+yolo-easy-augmentation      1.0.7
