@@ -58,4 +58,10 @@ Copied and renamed: image.jpg -> image_0371_none.jpg
 
 Now we have 372 images, still a lot but more manageable
 
-
+we use label studio to manually create annotation, occasionally with the help of grounding dino
+We upload the annotated dataset to Roboflow (https://universe.roboflow.com/nyp-cwjfs/yolo_koala_kangaroo)
+We then use roboflow studio to split our data to :
+- train 70%
+- validation 20%
+- test 10%
+Also we enable resize to 512x512 with auto orientation
