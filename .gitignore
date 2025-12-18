@@ -1,3 +1,8 @@
+# label studio specific ignores
+Label-Studio/labelstudio_data
+Label-Studio/grnddino_data
+Label-Studio/assets
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
