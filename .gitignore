@@ -3,6 +3,10 @@ Label-Studio/labelstudio_data
 Label-Studio/grnddino_data
 Label-Studio/assets
 koala_kangaroo_images_small_renamed
+datasets
+runs
+wandb
+koala-kangaroo
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
