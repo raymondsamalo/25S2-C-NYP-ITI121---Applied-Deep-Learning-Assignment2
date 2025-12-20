@@ -7,3 +7,4 @@ scale: 0.0
 fliplr: 0.0
 mosaic: 0.0
 erasing: 0.0
+#"datasets/yolo_koala_kangaroo v3.v1i.yolov11/data.yaml"

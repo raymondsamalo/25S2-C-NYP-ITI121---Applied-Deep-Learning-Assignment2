@@ -1,0 +1,4 @@
+epochs: 30
+# this dataset combines koala and kangaroo images from Roboflow Universe and Kaggle
+data: datasets/koala_kangaroo_rfu_kaggle.v1i.yolov11/data.yaml
+# original settings with extra "background" class

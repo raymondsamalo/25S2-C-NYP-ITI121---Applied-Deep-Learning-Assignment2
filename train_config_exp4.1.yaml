@@ -1,0 +1,3 @@
+epochs: 20
+data: datasets/yolo_koala_kangaroo.v1-original.yolov11_add_backgrounds/data.yaml
+# original settings with extra "background" class

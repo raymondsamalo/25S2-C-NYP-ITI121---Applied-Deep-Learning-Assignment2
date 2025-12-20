@@ -10,3 +10,5 @@ erasing: 0.0
 degrees: 10.0
 shear: 10.0
 perspective: 0.001
+# failed experiments as it deteriorates performance and detect nothing
+# "datasets/yolo_koala_kangaroo v3.v1i.yolov11/data.yaml"
