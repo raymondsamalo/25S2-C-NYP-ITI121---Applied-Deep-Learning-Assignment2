@@ -1,2 +1,0 @@
-epochs: 20
-data: datasets/yolo_koala_kangaroo.v5-add_rotation_brightness_blur.yolov11/data.yaml

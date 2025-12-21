@@ -1,0 +1,2 @@
+epochs: 20
+data: datasets/yolo_koala_kangaroo.v7-add_brightness.yolov11/data.yaml
