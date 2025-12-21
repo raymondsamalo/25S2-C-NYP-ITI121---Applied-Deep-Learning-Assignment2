@@ -56,3 +56,10 @@ We then create config files in experiments folder to use the datasets
 ├── 7_rotation_brightness_blur_flip_large_20.yaml
 └── 8_rotation_brightness_blur_flip_large_50.yaml
 the file names indicates the augmentation and lastly the epoch
+
+
+results :
+- Experiment 1 mAP@50 0.82677 F1 Score: 0.8016221694929363 Precision: 0.8111582564790287, Recall: 0.7923076923076923
+- Experiment 2
+
+
