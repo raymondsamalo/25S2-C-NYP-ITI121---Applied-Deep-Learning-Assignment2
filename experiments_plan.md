@@ -59,7 +59,8 @@ the file names indicates the augmentation and lastly the epoch
 
 
 results :
-- Experiment 1 mAP@50 0.82677 F1 Score: 0.8016221694929363 Precision: 0.8111582564790287, Recall: 0.7923076923076923
-- Experiment 2
+- Experiment 1 Original mAP@50 0.82677 F1 Score: 0.8016221694929363 Precision: 0.8111582564790287, Recall: 0.7923076923076923
+- Experiment 2 Rotation mAP@50 0.79385 F1 Score: 0.7575404488062254 Precision: 0.7924105674337826, Recall: 0.725609901218067 -> Rotation made it worse
+
 
 
