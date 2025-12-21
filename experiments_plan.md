@@ -28,6 +28,10 @@ we have the following datasets created using label-studio and roboflow :
         - 592 train and 44 validation images
         - Add Brightness Augmentation between -15% and +15%
         - Add Grayscale images augmentation 15% of population -> I added this to allow model to differentiate between background and image (kangoroo especially)
+    - yolo_koala_kangaroo_no_bg.v5-no_bg_b_g_exposure.yolov11.zip
+        Grayscale: Apply to 15% of images
+        Brightness: Between -15% and +15%
+        Exposure: Between -10% and +10%
 
 - From https://universe.roboflow.com/raymonds-mqlky/yolo_koala_kangaroo/dataset/6 
     - yolo_koala_kangaroo.v2-original.yolov11.zip 
@@ -60,6 +64,9 @@ We then create config files in experiments folder to use the datasets
 ├── 3_nbg_brightness_20.yaml
 ├── 4_nbg_b_hflip_20.yaml
 ├── 5_nbg_b_gray_20.yaml
+├── 6_nbg_b_g_exposure_20.yaml
+├── 7_nbg_b_gray_70.yaml
+
 
 the file names indicates the augmentation and lastly the epoch
 
@@ -77,3 +84,7 @@ results :
     mAP@50 0.87639 F1 Score: 0.8183291601052397 Precision: 0.8876127833353802, Recall: 0.7590784315854575 -> not as good as experiment 3 
 - Experiment 5 No Background Brightness Gray
     mAP@50 0.89114 F1 Score: 0.8581574409111282 Precision: 0.8809234790530212, Recall: 0.8365384615384616 -> improved
+- Experiment 6 No Background Brightness Gray Exposure
+    mAP@50 0.89227 F1 Score: 0.8468006970334975 Precision: 0.8582671798082908, Recall: 0.8356365602132901 -> our mAP improved but we are less precise and our confusion metrics looks worst as we have more background identified as kangaroo, let's avoid this as our improvement in mAP is slight only
+- Experiment 7 No Background Brightness Gray -> Train longer than 20 epochs -> increase to 50 Epochs
+
