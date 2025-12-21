@@ -76,3 +76,4 @@ results :
 - Experiment 4 No Background Brightness Horizontal Flip
     mAP@50 0.87639 F1 Score: 0.8183291601052397 Precision: 0.8876127833353802, Recall: 0.7590784315854575 -> not as good as experiment 3 
 - Experiment 5 No Background Brightness Gray
+    mAP@50 0.89114 F1 Score: 0.8581574409111282 Precision: 0.8809234790530212, Recall: 0.8365384615384616 -> improved
