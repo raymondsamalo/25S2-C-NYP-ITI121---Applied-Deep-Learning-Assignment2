@@ -73,20 +73,20 @@ the file names indicates the augmentation and lastly the epoch
 
 results :
 - Experiment 0 No Background 
-    mAP@50 0.84261 F1 Score: 0.8138382232715108 Precision: 0.8663764093828317, Recall: 0.7673076923076922
+    mAP@50 0.84261 mAP50-95 0.42129 F1 Score: 0.8138382232715108 Precision: 0.8663764093828317, Recall: 0.7673076923076922
 - Experiment 1 Original 
-    mAP@50 0.82677 F1 Score: 0.8016221694929363 Precision: 0.8111582564790287, Recall: 0.7923076923076923 -> add background made it worse
+    mAP@50 0.82677 mAP50-95	0.38853 F1 Score: 0.8016221694929363 Precision: 0.8111582564790287, Recall: 0.7923076923076923 -> add background made it worse
 - Experiment 2 Rotation 
-    mAP@50 0.79385 F1 Score: 0.7575404488062254 Precision: 0.7924105674337826, Recall: 0.725609901218067 -> Rotation made it worse
+    mAP@50 0.79385 mAP50-95	0.4185 F1 Score: 0.7575404488062254 Precision: 0.7924105674337826, Recall: 0.725609901218067 -> Rotation made it worse
 - Experiment 3 No Background Brightness
-    mAP@50 0.87867 F1 Score: 0.8192785323219932 Precision: 0.8497767682998405, Recall: 0.7908935959226651 -> better than previous experiments
+    mAP@50 0.87867 mAP50-95	0.48744 F1 Score: 0.8192785323219932 Precision: 0.8497767682998405, Recall: 0.7908935959226651 -> better than previous experiments
 - Experiment 4 No Background Brightness Horizontal Flip
-    mAP@50 0.87639 F1 Score: 0.8183291601052397 Precision: 0.8876127833353802, Recall: 0.7590784315854575 -> not as good as experiment 3 
+    mAP@50 0.87639 mAP50-95	0.43132 F1 Score: 0.8183291601052397 Precision: 0.8876127833353802, Recall: 0.7590784315854575 -> not as good as experiment 3 
 - Experiment 5 No Background Brightness Gray
-    mAP@50 0.89114 F1 Score: 0.8581574409111282 Precision: 0.8809234790530212, Recall: 0.8365384615384616 -> improved
+    mAP@50 0.89114 mAP50-95	0.49095 F1 Score: 0.8581574409111282 Precision: 0.8809234790530212, Recall: 0.8365384615384616 -> improved
 - Experiment 6 No Background Brightness Gray Exposure
-    mAP@50 0.89227 F1 Score: 0.8468006970334975 Precision: 0.8582671798082908, Recall: 0.8356365602132901 -> our mAP improved but we are less precise and our confusion metrics looks worst as we have more background identified as kangaroo, let's avoid this as our improvement in mAP is slight only
+    mAP@50 0.89227 mAP50-95	0.45718 F1 Score: 0.8468006970334975 Precision: 0.8582671798082908, Recall: 0.8356365602132901 -> our mAP improved but we are less precise and our confusion metrics looks worst as we have more background identified as kangaroo, let's avoid this as our improvement in mAP is slight only
 - Experiment 7 No Background Brightness Gray -> Train longer than 20 epochs -> increase to 50 Epochs
-    mAP@50 0.91402 F1 Score: 0.8161348618013248 Precision: 0.8603839848082981, Recall: 0.7762145321360296
-- Experiment 8 No Background Brightness Gray Large DataSet-> Train longer than 20 epochs -> increase to 50 Epochs
-    mAP@50 0.91991 F1 Score: 0.8988637289946009 Precision: 0.9284827287633539, Recall: 0.8710760277637297
+    mAP@50 0.91402 mAP50-95	0.49168 F1 Score: 0.8161348618013248 Precision: 0.8603839848082981, Recall: 0.7762145321360296
+- Experiment 8 No Background Brightness Gray Large DataSet-> increase to 50 Epochs
+    mAP@50 0.91991 mAP50-95	0.69721 F1 Score: 0.8988637289946009 Precision: 0.9284827287633539, Recall: 0.8710760277637297
