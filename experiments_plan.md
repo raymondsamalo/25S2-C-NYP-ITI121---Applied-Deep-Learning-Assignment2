@@ -85,7 +85,7 @@ results :
 - Experiment 5 No Background Brightness Gray
     mAP@50 0.89114 mAP50-95	0.49095 F1 Score: 0.8581574409111282 Precision: 0.8809234790530212, Recall: 0.8365384615384616 -> improved
 - Experiment 6 No Background Brightness Gray Exposure
-    mAP@50 0.89227 mAP50-95	0.45718 F1 Score: 0.8468006970334975 Precision: 0.8582671798082908, Recall: 0.8356365602132901 -> our mAP improved but we are less precise and our confusion metrics looks worst as we have more background identified as kangaroo, let's avoid this as our improvement in mAP is slight only
+    mAP@50 0.89227 mAP50-95	0.45718 F1 Score: 0.8468006970334975 Precision: 0.8582671798082908, Recall: 0.8356365602132901 -> our mAP 50 improved but mAP50-95 dropped given mAP 50-95 more stringent and higher weightage in ultralytics crieria 0.9 vs 0.1 for mAP 50, let's drop the Exposure augmentation
 - Experiment 7 No Background Brightness Gray -> Train longer than 20 epochs -> increase to 50 Epochs
     mAP@50 0.91402 mAP50-95	0.49168 F1 Score: 0.8161348618013248 Precision: 0.8603839848082981, Recall: 0.7762145321360296
 - Experiment 8 No Background Brightness Gray Large DataSet-> increase to 50 Epochs
