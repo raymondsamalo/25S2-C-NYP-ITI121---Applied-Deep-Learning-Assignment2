@@ -15,6 +15,14 @@ we have the following datasets created using label-studio and roboflow :
         - Annotated manually using Label Studio 
         - Resize using Roboflow to 640x640 and auto-orient
         - No augmentation
+    - yolo_koala_kangaroo_no_bg.v2-no_bg_brightness.yolov11
+        - 592 train and 44 validation images
+        - Add Brightness Augmentation between -15% and +15%
+    - yolo_koala_kangaroo_no_bg.v3-no_bg_brightness_hflip.yolov11.zip
+        - 592 train and 44 validation images
+        - Add Brightness Augmentation between -15% and +15%
+        - Add Flip Horizontal Augmentation
+
 - From https://universe.roboflow.com/raymonds-mqlky/yolo_koala_kangaroo/dataset/6 
     - yolo_koala_kangaroo.v2-original.yolov11.zip 
         - 300 train and 44 validation images
@@ -25,9 +33,6 @@ we have the following datasets created using label-studio and roboflow :
     - yolo_koala_kangaroo.v3-add_rotation.yolov11.zip
         - 600 train and 44 validation images
         - Add Rotation Augmentation between -15 degree and +15 degree
-    - yolo_koala_kangaroo.v7-add_brightness.yolov11.zip
-        - 600 train and 44 validation images
-        - Add Brightness Augmentation between -15% and +15%
 
 - From https://universe.roboflow.com/raymonds-mqlky/koala_kangaroo_rfu_kaggle/dataset/2
     - koala_kangaroo_rfu_kaggle.v2-latest.yolov11.zip
@@ -46,13 +51,20 @@ We then create config files in experiments folder to use the datasets
 ├── 0_no_background_20.yaml
 ├── 1_original_20.yaml
 ├── 2_rotation_20.yaml
-├── 3_brightness_20.yaml
+├── 3_nbg_brightness_20.yaml
+├── 4_nbg_b_hflip__20.yaml
 the file names indicates the augmentation and lastly the epoch
 
 
 results :
-- Experiment 1 Original mAP@50 0.82677 F1 Score: 0.8016221694929363 Precision: 0.8111582564790287, Recall: 0.7923076923076923
-- Experiment 2 Rotation mAP@50 0.79385 F1 Score: 0.7575404488062254 Precision: 0.7924105674337826, Recall: 0.725609901218067 -> Rotation made it worse
-
+- Experiment 0 No Background 
+    mAP@50 0.84261 F1 Score: 0.8138382232715108 Precision: 0.8663764093828317, Recall: 0.7673076923076922
+- Experiment 1 Original 
+    mAP@50 0.82677 F1 Score: 0.8016221694929363 Precision: 0.8111582564790287, Recall: 0.7923076923076923 -> add background made it worse
+- Experiment 2 Rotation 
+    mAP@50 0.79385 F1 Score: 0.7575404488062254 Precision: 0.7924105674337826, Recall: 0.725609901218067 -> Rotation made it worse
+- Experiment 3 No Background Brightness
+    mAP@50 0.87867 F1 Score: 0.8192785323219932 Precision: 0.8497767682998405, Recall: 0.7908935959226651 -> better than previous experiments
+- Experiment 4 No Background Brightness Horizontal Flip
 
 
