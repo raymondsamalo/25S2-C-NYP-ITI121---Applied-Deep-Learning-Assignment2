@@ -89,4 +89,4 @@ results :
 - Experiment 7 No Background Brightness Gray -> Train longer than 20 epochs -> increase to 50 Epochs
     mAP@50 0.91402 mAP50-95	0.49168 F1 Score: 0.8161348618013248 Precision: 0.8603839848082981, Recall: 0.7762145321360296
 - Experiment 8 No Background Brightness Gray Large DataSet-> increase to 50 Epochs
-    mAP@50 0.91991 mAP50-95	0.69721 F1 Score: 0.8988637289946009 Precision: 0.9284827287633539, Recall: 0.8710760277637297
+    mAP@50 0.91991 mAP50-95	0.69721 F1 Score: 0.8988637289946009 Precision: 0.9284827287633539, Recall: 0.8710760277637297 -> looks better but we did not manually annotate this and we saw some drawbacks on test images as it tends to detect koala in background image -> better for kangaroo but worse for koala
