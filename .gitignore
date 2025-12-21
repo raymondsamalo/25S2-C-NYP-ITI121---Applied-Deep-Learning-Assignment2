@@ -7,6 +7,11 @@ datasets/
 runs
 wandb
 koala-kangaroo
+yolo-koala-kangaroo/*/weights/
+yolo-koala-kangaroo/*/train_*
+yolo-koala-kangaroo/*/val_*
+results/
+*.pt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
