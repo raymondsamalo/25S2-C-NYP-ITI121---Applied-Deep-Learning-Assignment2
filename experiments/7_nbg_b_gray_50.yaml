@@ -1,0 +1,2 @@
+epochs: 50
+data: datasets/yolo_koala_kangaroo_no_bg.v4-no_bg_b_gray.yolov11/data.yaml

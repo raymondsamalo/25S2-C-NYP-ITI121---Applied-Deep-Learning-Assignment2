@@ -1,3 +1,0 @@
-epochs: 100
-# datasets/yolo_koala_kangaroo.v1-original.yolov11/data.yaml
-# we increased epochs to 30 from 20 in exp1.yaml to allow more training time for better convergence
