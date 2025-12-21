@@ -87,4 +87,4 @@ results :
 - Experiment 6 No Background Brightness Gray Exposure
     mAP@50 0.89227 F1 Score: 0.8468006970334975 Precision: 0.8582671798082908, Recall: 0.8356365602132901 -> our mAP improved but we are less precise and our confusion metrics looks worst as we have more background identified as kangaroo, let's avoid this as our improvement in mAP is slight only
 - Experiment 7 No Background Brightness Gray -> Train longer than 20 epochs -> increase to 50 Epochs
-
+    mAP@50 0.91402 F1 Score: 0.8161348618013248 Precision: 0.8603839848082981, Recall: 0.7762145321360296
