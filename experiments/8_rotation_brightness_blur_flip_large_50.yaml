@@ -1,0 +1,2 @@
+epochs: 50
+data: datasets/koala_kangaroo_rfu_kaggle.v2-latest.yolov11/data.yaml
